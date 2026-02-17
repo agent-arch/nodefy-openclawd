@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 // ============================================
 // OPENCLAW DASHBOARD
-// Last Updated: 2026-02-15 09:00
+// Last Updated: 2026-02-17 09:00
 // Nodefy AI Agent Workspace
 // ============================================
 
@@ -96,6 +96,10 @@ const projects: Project[] = [
   { id: 'moltbot-shop', name: 'Moltbot Shop', description: 'Moltbot merchandise/atelier', status: 'active', category: 'Experiments', folder: '~/clawd/moltbot-shop/', updatedAt: '2026-02-15' },
   { id: 'competitive-intel', name: 'Competitive Intelligence', description: 'Ad spy & competitive research', status: 'active', category: 'Nodefy Internal', folder: '~/clawd/competitive-intelligence/', updatedAt: '2026-02-15' },
   { id: 'sol-trader-vercel', name: 'SOL Trader (Vercel)', description: 'Solana trader web version', status: 'done', category: 'Experiments', folder: '~/clawd/sol-trader-vercel/', updatedAt: '2026-02-15' },
+  { id: 'nda-nathan', name: 'NDA Nathan', description: 'NDA document', status: 'done', category: 'Nodefy Internal', folder: '~/clawd/nda-nathan/', updatedAt: '2026-02-16' },
+  
+  // === NEW (auto-detected 2026-02-17) ===
+  { id: 'nodefy-spinoffs', name: 'Nodefy Spinoffs', description: 'US→EU SaaS opportunity explorer', status: 'active', category: 'Experiments', folder: '~/clawd/nodefy-spinoffs/', updatedAt: '2026-02-17' },
   
   // === SYSTEM ===
   { id: 'skills', name: 'Skills', description: 'OpenClaw skill definitions', status: 'active', category: 'System', folder: '~/clawd/skills/', updatedAt: '2026-02-14' },
@@ -107,7 +111,7 @@ const projects: Project[] = [
 
 const categories: Category[] = ['all', 'OpenClaw Agency', 'Nodefy Internal', 'Lead Gen Tools', 'Client Websites', 'AI Projects', 'Experiments', 'System']
 
-const LAST_UPDATED = '2026-02-14 14:58'
+const LAST_UPDATED = '2026-02-17 09:00'
 
 export default function Dashboard() {
   const [selectedCategory, setSelectedCategory] = useState<Category>('all')
