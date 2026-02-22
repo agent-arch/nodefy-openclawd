@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 // ============================================
 // OPENCLAW DASHBOARD
-// Last Updated: 2026-02-21 09:00
+// Last Updated: 2026-02-22 09:00
 // Nodefy AI Agent Workspace
 // ============================================
 
@@ -117,6 +117,9 @@ const projects: Project[] = [
   { id: 'alabaster-website', name: 'Alabaster Website', description: 'Client website project', status: 'active', category: 'Client Websites', folder: '~/clawd/alabaster-website/', updatedAt: '2026-02-21' },
   { id: 'code-zero-website', name: 'Code Zero Website', description: 'Client website project', status: 'active', category: 'Client Websites', folder: '~/clawd/code-zero-website/', updatedAt: '2026-02-21' },
   
+  // === NEW (auto-detected 2026-02-22) ===
+  { id: 'marketing-agency-directory', name: 'Marketing Agency Directory', description: 'Agency directory/listing platform', status: 'active', category: 'Lead Gen Tools', folder: '~/clawd/marketing-agency-directory/', updatedAt: '2026-02-22' },
+  
   // === SYSTEM ===
   { id: 'skills', name: 'Skills', description: 'OpenClaw skill definitions', status: 'active', category: 'System', folder: '~/clawd/skills/', updatedAt: '2026-02-14' },
   { id: 'memory', name: 'Memory', description: 'Daily notes and session memory', status: 'active', category: 'System', folder: '~/clawd/memory/', updatedAt: '2026-02-14' },
@@ -127,7 +130,7 @@ const projects: Project[] = [
 
 const categories: Category[] = ['all', 'OpenClaw Agency', 'Nodefy Internal', 'Lead Gen Tools', 'Client Websites', 'AI Projects', 'Experiments', 'System']
 
-const LAST_UPDATED = '2026-02-21 09:00'
+const LAST_UPDATED = '2026-02-22 09:00'
 
 export default function Dashboard() {
   const [selectedCategory, setSelectedCategory] = useState<Category>('all')
