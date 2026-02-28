@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 // ============================================
 // OPENCLAW DASHBOARD
-// Last Updated: 2026-02-24 09:00
+// Last Updated: 2026-02-28 09:00
 // Nodefy AI Agent Workspace
 // ============================================
 
@@ -33,8 +33,8 @@ const projects: Project[] = [
   { id: 'nodefy-scaling', name: 'Nodefy Scaling', description: 'Scaling strategy & research', status: 'done', category: 'Nodefy Internal', folder: '~/clawd/nodefy-scaling/', updatedAt: '2026-01-30' },
   { id: 'nodefy-2', name: 'Nodefy 2.0', description: 'Nodefy transformatie plan', status: 'done', category: 'Nodefy Internal', folder: '~/clawd/nodefy-2.0/', updatedAt: '2026-01-28' },
   { id: 'nodefy-redesign', name: 'Nodefy Redesign', description: 'Website redesign project', status: 'paused', category: 'Nodefy Internal', folder: '~/clawd/nodefy-redesign/', updatedAt: '2026-02-08' },
-  { id: 'nodefy-dashboard', name: 'Nodefy Dashboard', description: 'Internal dashboard', status: 'done', category: 'Nodefy Internal', folder: '~/clawd/nodefy-dashboard/', updatedAt: '2026-02-10' },
-  { id: 'client-portal', name: 'Client Portal', description: 'Nodefy client portal concept', status: 'paused', category: 'Nodefy Internal', folder: '~/clawd/nodefy-client-portal/', updatedAt: '2026-02-08' },
+  { id: 'nodefy-dashboard', name: 'Nodefy Dashboard', description: 'Internal dashboard', status: 'done', category: 'Nodefy Internal', url: 'https://nodefy-dashboard.vercel.app', folder: '~/clawd/nodefy-dashboard/', updatedAt: '2026-02-10' },
+  { id: 'client-portal', name: 'Client Portal', description: 'Nodefy client portal concept', status: 'paused', category: 'Nodefy Internal', url: 'https://nodefy-client-portal.vercel.app', folder: '~/clawd/nodefy-client-portal/', updatedAt: '2026-02-08' },
   { id: 'linkedin-content', name: 'LinkedIn Content', description: 'LinkedIn content planning', status: 'active', category: 'Nodefy Internal', folder: '~/clawd/nodefy-linkedin/', updatedAt: '2026-02-05' },
   { id: 'client-reports', name: 'Client Reports', description: 'Weekly/monthly client reports', status: 'active', category: 'Nodefy Internal', folder: '~/clawd/client-reports/', updatedAt: '2026-02-14' },
   { id: 'audit-templates', name: 'Audit Templates', description: 'Google/Meta/Tracking audit templates', status: 'done', category: 'Nodefy Internal', folder: '~/clawd/audits/', updatedAt: '2026-02-10' },
@@ -44,22 +44,22 @@ const projects: Project[] = [
   // === LEAD GEN TOOLS ===
   { id: 'tracking-checker', name: 'Tracking Health Checker', description: 'Server side tracking scanner tool', status: 'blocked', category: 'Lead Gen Tools', folder: '~/clawd/tracking-health-checker/', updatedAt: '2026-02-14' },
   { id: 'meta-analyzer', name: 'Meta Ads Analyzer', description: 'Meta Ads analyse tool', status: 'done', category: 'Lead Gen Tools', folder: '~/clawd/meta-ads-analyzer/', updatedAt: '2026-02-03' },
-  { id: 'meta-analyzer-web', name: 'Meta Ads Analyzer v1', description: 'First version of ad analyzer', status: 'done', category: 'Lead Gen Tools', folder: '~/clawd/meta-ads-analyzer-web/', updatedAt: '2026-02-03' },
+  { id: 'meta-analyzer-web', name: 'Meta Ads Analyzer v1', description: 'First version of ad analyzer', status: 'done', category: 'Lead Gen Tools', url: 'https://meta-ads-analyzer-web.vercel.app', folder: '~/clawd/meta-ads-analyzer-web/', updatedAt: '2026-02-03' },
   { id: 'nodefy-scanner', name: 'Nodefy Scanner', description: 'Website scanning tool', status: 'done', category: 'Lead Gen Tools', folder: '~/clawd/nodefy-scanner/', updatedAt: '2026-01-28' },
   { id: 'shopify-calc', name: 'Shopify Calculator', description: 'Shopify ROI calculator', status: 'done', category: 'Lead Gen Tools', folder: '~/clawd/shopify-calculator/', updatedAt: '2026-02-05' },
   { id: 'roas-calc', name: 'ROAS Calculator', description: 'ROAS calculation tool', status: 'done', category: 'Lead Gen Tools', folder: '~/clawd/roas-calculator/', updatedAt: '2026-02-14' },
   
   // === CLIENT WEBSITES ===
-  { id: 'fpnp', name: 'FPNP Website', description: 'Client website project', status: 'done', category: 'Client Websites', folder: '~/clawd/fpnp-website/', updatedAt: '2026-02-06' },
-  { id: 'foresight', name: 'Foresight Landing', description: 'Recruitment landing page', status: 'done', category: 'Client Websites', folder: '~/clawd/foresight-landing/', updatedAt: '2026-02-05' },
-  { id: 'goldrepublic', name: 'GoldRepublic Landing', description: 'Landing page project', status: 'done', category: 'Client Websites', folder: '~/clawd/goldrepublic-landing/', updatedAt: '2026-01-28' },
-  { id: 'jesse', name: 'Jesse Jewelry', description: 'Jewelry webshop project', status: 'done', category: 'Client Websites', folder: '~/clawd/jesse-jewelry/', updatedAt: '2026-01-25' },
-  { id: 'sfi', name: 'SFI Greenmarkets', description: 'Green markets website', status: 'done', category: 'Client Websites', folder: '~/clawd/sfi-greenmarkets/', updatedAt: '2026-01-12' },
-  { id: 'zinc', name: 'Zinc Website', description: 'Client website', status: 'done', category: 'Client Websites', folder: '~/clawd/zinc-website/', updatedAt: '2026-01-15' },
-  { id: 'tolbar', name: 'Tolbar Website', description: 'Client website', status: 'done', category: 'Client Websites', folder: '~/clawd/tolbar-website/', updatedAt: '2026-01-18' },
-  { id: 'aperghis', name: 'Aperghis Website', description: 'Client website', status: 'done', category: 'Client Websites', folder: '~/clawd/aperghis-website/', updatedAt: '2026-02-01' },
-  { id: 'spark', name: 'Spark Advertising', description: 'Advertising agency website', status: 'done', category: 'Client Websites', folder: '~/clawd/spark-advertising/', updatedAt: '2026-01-10' },
-  { id: 'capisoft', name: 'Capisoft Redesign', description: 'Website redesign', status: 'done', category: 'Client Websites', folder: '~/clawd/capisoft-redesign/', updatedAt: '2026-01-30' },
+  { id: 'fpnp', name: 'FPNP Website', description: 'Client website project', status: 'done', category: 'Client Websites', url: 'https://fpnp-website.vercel.app', folder: '~/clawd/fpnp-website/', updatedAt: '2026-02-06' },
+  { id: 'foresight', name: 'Foresight Landing', description: 'Recruitment landing page', status: 'done', category: 'Client Websites', url: 'https://foresight-landing.vercel.app', folder: '~/clawd/foresight-landing/', updatedAt: '2026-02-05' },
+  { id: 'goldrepublic', name: 'GoldRepublic Landing', description: 'Landing page project', status: 'done', category: 'Client Websites', url: 'https://goldrepublic-landing.vercel.app', folder: '~/clawd/goldrepublic-landing/', updatedAt: '2026-01-28' },
+  { id: 'jesse', name: 'Jesse Jewelry', description: 'Jewelry webshop project', status: 'done', category: 'Client Websites', url: 'https://jesse-jewelry.vercel.app', folder: '~/clawd/jesse-jewelry/', updatedAt: '2026-01-25' },
+  { id: 'sfi', name: 'SFI Greenmarkets', description: 'Green markets website', status: 'done', category: 'Client Websites', url: 'https://sfi-greenmarkets.vercel.app', folder: '~/clawd/sfi-greenmarkets/', updatedAt: '2026-01-12' },
+  { id: 'zinc', name: 'Zinc Website', description: 'Client website', status: 'done', category: 'Client Websites', url: 'https://zinc-website.vercel.app', folder: '~/clawd/zinc-website/', updatedAt: '2026-01-15' },
+  { id: 'tolbar', name: 'Tolbar Website', description: 'Client website', status: 'done', category: 'Client Websites', url: 'https://tolbar-website.vercel.app', folder: '~/clawd/tolbar-website/', updatedAt: '2026-01-18' },
+  { id: 'aperghis', name: 'Aperghis Website', description: 'Client website', status: 'done', category: 'Client Websites', url: 'https://aperghis-website.vercel.app', folder: '~/clawd/aperghis-website/', updatedAt: '2026-02-01' },
+  { id: 'spark', name: 'Spark Advertising', description: 'Advertising agency website', status: 'done', category: 'Client Websites', url: 'https://spark-advertising.vercel.app', folder: '~/clawd/spark-advertising/', updatedAt: '2026-01-10' },
+  { id: 'capisoft', name: 'Capisoft Redesign', description: 'Website redesign', status: 'done', category: 'Client Websites', url: 'https://capisoft-redesign.vercel.app', folder: '~/clawd/capisoft-redesign/', updatedAt: '2026-01-30' },
   { id: 'namam', name: 'NAMAM Website', description: 'Luxury interior design website', status: 'done', category: 'Client Websites', url: 'https://namam-website.vercel.app', folder: '~/clawd/namam-website/', updatedAt: '2026-02-12' },
   { id: 'godelphi', name: 'Go Delphi Website', description: 'Luxury retreat website', status: 'done', category: 'Client Websites', url: 'https://godelphi-website.vercel.app', folder: '~/clawd/godelphi-website/', updatedAt: '2026-02-14' },
   { id: 'lucky', name: 'Lucky Parcel', description: 'Market stall website', status: 'done', category: 'Client Websites', url: 'https://lucky-parcel.vercel.app', folder: '~/clawd/lucky-parcel/', updatedAt: '2026-02-14' },
@@ -74,15 +74,15 @@ const projects: Project[] = [
   { id: 'video-analysis', name: 'Video Analysis', description: 'Frame extraction for design reference', status: 'active', category: 'AI Projects', folder: '~/clawd/video-analysis/', updatedAt: '2026-02-14' },
   
   // === EXPERIMENTS ===
-  { id: 'whoop', name: 'Whoop Dashboard', description: 'Personal fitness dashboard', status: 'done', category: 'Experiments', folder: '~/clawd/whoop-dashboard/', updatedAt: '2026-02-01' },
+  { id: 'whoop', name: 'Whoop Dashboard', description: 'Personal fitness dashboard', status: 'done', category: 'Experiments', url: 'https://whoop-dashboard.vercel.app', folder: '~/clawd/whoop-dashboard/', updatedAt: '2026-02-01' },
   { id: 'polymarket-bot', name: 'Polymarket Bot', description: 'Polymarket trading bot', status: 'done', category: 'Experiments', folder: '~/clawd/polymarket-bot/', updatedAt: '2026-02-01' },
-  { id: 'polymarket-yolo', name: 'Polymarket YOLO', description: 'Polymarket trading experiment', status: 'done', category: 'Experiments', folder: '~/clawd/polymarket-yolo/', updatedAt: '2026-01-28' },
+  { id: 'polymarket-yolo', name: 'Polymarket YOLO', description: 'Polymarket trading experiment', status: 'done', category: 'Experiments', url: 'https://polymarket-yolo.vercel.app', folder: '~/clawd/polymarket-yolo/', updatedAt: '2026-01-28' },
   { id: 'sol', name: 'SOL Trader', description: 'Solana trading bot', status: 'done', category: 'Experiments', folder: '~/clawd/sol-trader/', updatedAt: '2026-01-25' },
-  { id: 'disco', name: 'Disco Frog Clone', description: 'Interactive website clone', status: 'done', category: 'Experiments', folder: '~/clawd/discofrog-clone/', updatedAt: '2026-02-04' },
-  { id: 'screensaver', name: 'Moltbot Screensaver', description: 'Idle screen with red lobster mascot', status: 'done', category: 'Experiments', folder: '~/clawd/screensaver/', updatedAt: '2026-02-04' },
-  { id: 'valentijn', name: 'Valentijn', description: 'Video generation with Remotion', status: 'done', category: 'Experiments', folder: '~/clawd/valentijn/', updatedAt: '2026-02-14' },
+  { id: 'disco', name: 'Disco Frog Clone', description: 'Interactive website clone', status: 'done', category: 'Experiments', url: 'https://discofrog-clone.vercel.app', folder: '~/clawd/discofrog-clone/', updatedAt: '2026-02-04' },
+  { id: 'screensaver', name: 'Moltbot Screensaver', description: 'Idle screen with red lobster mascot', status: 'done', category: 'Experiments', url: 'https://nodefy-screensaver.vercel.app', folder: '~/clawd/screensaver/', updatedAt: '2026-02-04' },
+  { id: 'valentijn', name: 'Valentijn', description: 'Video generation with Remotion', status: 'done', category: 'Experiments', url: 'https://valentijn.vercel.app', folder: '~/clawd/valentijn/', updatedAt: '2026-02-14' },
   { id: 'remotion', name: 'Remotion Project', description: 'Video generation with Remotion', status: 'done', category: 'Experiments', folder: '~/clawd/remotion-project/', updatedAt: '2026-01-05' },
-  { id: 'blade', name: 'Blade Master Jobs', description: 'Job board project', status: 'done', category: 'Experiments', folder: '~/clawd/blade-master-jobs/', updatedAt: '2026-01-15' },
+  { id: 'blade', name: 'Blade Master Jobs', description: 'Job board project', status: 'done', category: 'Experiments', url: 'https://blade-master-jobs.vercel.app', folder: '~/clawd/blade-master-jobs/', updatedAt: '2026-01-15' },
   { id: 'mission', name: 'Mission Control', description: 'Control dashboard experiment', status: 'done', category: 'Experiments', folder: '~/clawd/mission-control/', updatedAt: '2026-02-05' },
   { id: 'jewber', name: 'Jewber', description: 'Jewelry project', status: 'paused', category: 'Experiments', folder: '~/clawd/jewber/', updatedAt: '2026-01-20' },
   { id: 'seo', name: 'SEO Bulk Network', description: '9 niche sites op Vercel', status: 'active', category: 'Experiments', folder: '~/clawd/seo-bulk-network/', updatedAt: '2026-02-03' },
@@ -91,39 +91,51 @@ const projects: Project[] = [
   
   // === NEW (auto-detected 2026-02-15) ===
   { id: 'nodefy-hero', name: 'Nodefy Hero Section', description: 'Hero section design for website', status: 'active', category: 'Nodefy Internal', url: 'https://nodefy-hero-section.vercel.app', folder: '~/clawd/nodefy-hero-section/', updatedAt: '2026-02-15' },
-  { id: 'nodefy-meta-analyzer', name: 'Nodefy Meta Analyzer', description: 'Meta Ads analysis tool v2', status: 'active', category: 'Lead Gen Tools', folder: '~/clawd/nodefy-meta-analyzer/', updatedAt: '2026-02-15' },
-  { id: 'nodefy-studio', name: 'Nodefy Studio', description: 'Creative studio tool', status: 'active', category: 'Nodefy Internal', folder: '~/clawd/nodefy-studio/', updatedAt: '2026-02-15' },
+  { id: 'nodefy-meta-analyzer', name: 'Nodefy Meta Analyzer', description: 'Meta Ads analysis tool v2', status: 'active', category: 'Lead Gen Tools', url: 'https://nodefy-meta-analyzer.vercel.app', folder: '~/clawd/nodefy-meta-analyzer/', updatedAt: '2026-02-15' },
+  { id: 'nodefy-studio', name: 'Nodefy Studio', description: 'Creative studio tool', status: 'active', category: 'Nodefy Internal', url: 'https://nodefy-studio.vercel.app', folder: '~/clawd/nodefy-studio/', updatedAt: '2026-02-15' },
   { id: 'moltbot-shop', name: 'Moltbot Shop', description: 'Moltbot merchandise/atelier', status: 'active', category: 'Experiments', folder: '~/clawd/moltbot-shop/', updatedAt: '2026-02-15' },
   { id: 'competitive-intel', name: 'Competitive Intelligence', description: 'Ad spy & competitive research', status: 'active', category: 'Nodefy Internal', folder: '~/clawd/competitive-intelligence/', updatedAt: '2026-02-15' },
-  { id: 'sol-trader-vercel', name: 'SOL Trader (Vercel)', description: 'Solana trader web version', status: 'done', category: 'Experiments', folder: '~/clawd/sol-trader-vercel/', updatedAt: '2026-02-15' },
+  { id: 'sol-trader-vercel', name: 'SOL Trader (Vercel)', description: 'Solana trader web version', status: 'done', category: 'Experiments', url: 'https://sol-trader-vercel.vercel.app', folder: '~/clawd/sol-trader-vercel/', updatedAt: '2026-02-15' },
   { id: 'nda-nathan', name: 'NDA Nathan', description: 'NDA document', status: 'done', category: 'Nodefy Internal', folder: '~/clawd/nda-nathan/', updatedAt: '2026-02-16' },
   
   // === NEW (auto-detected 2026-02-17) ===
-  { id: 'nodefy-spinoffs', name: 'Nodefy Spinoffs', description: 'US→EU SaaS opportunity explorer', status: 'active', category: 'Experiments', folder: '~/clawd/nodefy-spinoffs/', updatedAt: '2026-02-17' },
+  { id: 'nodefy-spinoffs', name: 'Nodefy Spinoffs', description: 'US→EU SaaS opportunity explorer', status: 'active', category: 'Experiments', url: 'https://nodefy-spinoffs.vercel.app', folder: '~/clawd/nodefy-spinoffs/', updatedAt: '2026-02-17' },
   
   // === NEW (auto-detected 2026-02-18) ===
-  { id: 'aromaclub-landing', name: 'Aromaclub Landing', description: 'Landing page project', status: 'done', category: 'Client Websites', folder: '~/clawd/aromaclub-landing/', updatedAt: '2026-02-18' },
+  { id: 'aromaclub-landing', name: 'Aromaclub Landing', description: 'Landing page project', status: 'done', category: 'Client Websites', url: 'https://aromaclub-landing.vercel.app', folder: '~/clawd/aromaclub-landing/', updatedAt: '2026-02-18' },
   { id: 'money-research', name: 'Money Research', description: 'AI income & creative monetization research', status: 'active', category: 'Experiments', folder: '~/clawd/money-research/', updatedAt: '2026-02-18' },
   { id: 'nodefy-sales', name: 'Nodefy Sales Data', description: 'Sales forecasting & metrics', status: 'active', category: 'Nodefy Internal', folder: '~/clawd/nodefy-sales/', updatedAt: '2026-02-18' },
   { id: 'sales', name: 'Sales Pitches', description: 'Sales plans & client pitches', status: 'active', category: 'Nodefy Internal', folder: '~/clawd/sales/', updatedAt: '2026-02-18' },
   
   // === NEW (auto-detected 2026-02-19) ===
-  { id: 'kapisoft-landing', name: 'Kapisoft Landing', description: 'Landing page project', status: 'done', category: 'Client Websites', folder: '~/clawd/kapisoft-landing/', updatedAt: '2026-02-19' },
+  { id: 'kapisoft-landing', name: 'Kapisoft Landing', description: 'Landing page project', status: 'done', category: 'Client Websites', url: 'https://kapisoft-landing.vercel.app', folder: '~/clawd/kapisoft-landing/', updatedAt: '2026-02-19' },
   
   // === NEW (auto-detected 2026-02-20) ===
-  { id: 'nodefy-presentaties', name: 'Nodefy Presentaties', description: 'Presentation templates & decks', status: 'active', category: 'Nodefy Internal', folder: '~/clawd/nodefy-presentaties/', updatedAt: '2026-02-20' },
+  { id: 'nodefy-presentaties', name: 'Nodefy Presentaties', description: 'Presentation templates & decks', status: 'active', category: 'Nodefy Internal', url: 'https://nodefy-presentaties.vercel.app', folder: '~/clawd/nodefy-presentaties/', updatedAt: '2026-02-20' },
   
   // === NEW (auto-detected 2026-02-21) ===
-  { id: 'alabaster-website', name: 'Alabaster Website', description: 'Client website project', status: 'active', category: 'Client Websites', folder: '~/clawd/alabaster-website/', updatedAt: '2026-02-21' },
-  { id: 'code-zero-website', name: 'Code Zero Website', description: 'Client website project', status: 'active', category: 'Client Websites', folder: '~/clawd/code-zero-website/', updatedAt: '2026-02-21' },
+  { id: 'alabaster-website', name: 'Alabaster Website', description: 'Client website project', status: 'active', category: 'Client Websites', url: 'https://alabaster-website.vercel.app', folder: '~/clawd/alabaster-website/', updatedAt: '2026-02-21' },
+  { id: 'code-zero-website', name: 'Code Zero Website', description: 'Client website project', status: 'active', category: 'Client Websites', url: 'https://code-zero-website.vercel.app', folder: '~/clawd/code-zero-website/', updatedAt: '2026-02-21' },
   
   // === NEW (auto-detected 2026-02-22) ===
-  { id: 'marketing-agency-directory', name: 'Marketing Agency Directory', description: 'Agency directory/listing platform', status: 'active', category: 'Lead Gen Tools', folder: '~/clawd/marketing-agency-directory/', updatedAt: '2026-02-22' },
+  { id: 'marketing-agency-directory', name: 'Marketing Agency Directory', description: 'Agency directory/listing platform', status: 'active', category: 'Lead Gen Tools', url: 'https://marketing-agency-directory.vercel.app', folder: '~/clawd/marketing-agency-directory/', updatedAt: '2026-02-22' },
   
   // === NEW (auto-detected 2026-02-24) ===
-  { id: 'nodefy-adengine', name: 'Nodefy Ad Engine', description: 'Ad engine/automation tool', status: 'active', category: 'AI Projects', folder: '~/clawd/nodefy-adengine/', updatedAt: '2026-02-24' },
-  { id: 'nodefy-audit-tool', name: 'Nodefy Audit Tool', description: 'Automated audit tool', status: 'active', category: 'Lead Gen Tools', folder: '~/clawd/nodefy-audit-tool/', updatedAt: '2026-02-24' },
+  { id: 'nodefy-adengine', name: 'Nodefy Ad Engine', description: 'Ad engine/automation tool', status: 'active', category: 'AI Projects', url: 'https://nodefy-adengine.vercel.app', folder: '~/clawd/nodefy-adengine/', updatedAt: '2026-02-24' },
+  { id: 'nodefy-audit-tool', name: 'Nodefy Audit Tool', description: 'Automated audit tool', status: 'active', category: 'Lead Gen Tools', url: 'https://nodefy-audit-tool.vercel.app', folder: '~/clawd/nodefy-audit-tool/', updatedAt: '2026-02-24' },
   
+  // === NEW (auto-detected 2026-02-25) ===
+  { id: 'nodefy-pitchdeck', name: 'Nodefy Pitchdeck', description: 'Pitch deck presentation app', status: 'active', category: 'Nodefy Internal', url: 'https://nodefy-pitchdeck.vercel.app', folder: '~/clawd/nodefy-pitchdeck/', updatedAt: '2026-02-25' },
+  { id: 'nodefy-remotion', name: 'Nodefy Remotion', description: 'Video generation with Remotion', status: 'active', category: 'AI Projects', folder: '~/clawd/nodefy-remotion/', updatedAt: '2026-02-25' },
+  { id: 'nodefy-roi-calculator', name: 'Nodefy ROI Calculator', description: 'ROI calculation tool', status: 'active', category: 'Lead Gen Tools', url: 'https://nodefy-roi-calculator.vercel.app', folder: '~/clawd/nodefy-roi-calculator/', updatedAt: '2026-02-25' },
+  
+  // === NEW (auto-detected 2026-02-25) ===
+  { id: 'nodefy-onboarding', name: 'Client Onboarding Portal', description: '6-step client onboarding met auto-save en admin panel', status: 'active', category: 'Nodefy Internal', url: 'https://nodefy-onboarding.vercel.app', folder: '~/clawd/nodefy-onboarding/', updatedAt: '2026-02-25' },
+
+  // === NEW (auto-detected 2026-02-28) ===
+  { id: 'nodefy-funnel-planner', name: 'Nodefy Funnel Planner', description: 'Funnel planning tool', status: 'active', category: 'Lead Gen Tools', url: 'https://nodefy-funnel-planner.vercel.app', folder: '~/clawd/nodefy-funnel-planner/', updatedAt: '2026-02-28' },
+  { id: 'nodefy-seo-scanner', name: 'Nodefy SEO Scanner', description: 'SEO scanning & analysis tool', status: 'active', category: 'Lead Gen Tools', url: 'https://nodefy-seo-scanner.vercel.app', folder: '~/clawd/nodefy-seo-scanner/', updatedAt: '2026-02-28' },
+
   // === SYSTEM ===
   { id: 'skills', name: 'Skills', description: 'OpenClaw skill definitions', status: 'active', category: 'System', folder: '~/clawd/skills/', updatedAt: '2026-02-14' },
   { id: 'memory', name: 'Memory', description: 'Daily notes and session memory', status: 'active', category: 'System', folder: '~/clawd/memory/', updatedAt: '2026-02-14' },
@@ -134,7 +146,7 @@ const projects: Project[] = [
 
 const categories: Category[] = ['all', 'OpenClaw Agency', 'Nodefy Internal', 'Lead Gen Tools', 'Client Websites', 'AI Projects', 'Experiments', 'System']
 
-const LAST_UPDATED = '2026-02-24 09:00'
+const LAST_UPDATED = '2026-02-28 09:00'
 
 export default function Dashboard() {
   const [selectedCategory, setSelectedCategory] = useState<Category>('all')
