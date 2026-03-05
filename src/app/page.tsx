@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 // ============================================
 // OPENCLAW DASHBOARD
-// Last Updated: 2026-03-02 09:00
+// Last Updated: 2026-03-05 09:00
 // Nodefy AI Agent Workspace
 // ============================================
 
@@ -136,6 +136,10 @@ const projects: Project[] = [
   { id: 'nodefy-funnel-planner', name: 'Nodefy Funnel Planner', description: 'Funnel planning tool', status: 'active', category: 'Lead Gen Tools', url: 'https://nodefy-funnel-planner.vercel.app', folder: '~/clawd/nodefy-funnel-planner/', updatedAt: '2026-02-28' },
   { id: 'nodefy-seo-scanner', name: 'Nodefy SEO Scanner', description: 'SEO scanning & analysis tool', status: 'active', category: 'Lead Gen Tools', url: 'https://nodefy-seo-scanner.vercel.app', folder: '~/clawd/nodefy-seo-scanner/', updatedAt: '2026-02-28' },
 
+  // === NEW (auto-detected 2026-03-04) ===
+  { id: 'estg-voorstel', name: 'ESTG Voorstel', description: 'ESTG proposal/pitch site', status: 'active', category: 'Client Websites', folder: '~/clawd/estg-voorstel/', updatedAt: '2026-03-04' },
+  { id: 'nodefy-website', name: 'Nodefy Website', description: 'Main Nodefy website (Next.js)', status: 'active', category: 'Nodefy Internal', folder: '~/clawd/nodefy-website/', updatedAt: '2026-03-04' },
+
   // === SYSTEM ===
   { id: 'skills', name: 'Skills', description: 'OpenClaw skill definitions', status: 'active', category: 'System', folder: '~/clawd/skills/', updatedAt: '2026-02-14' },
   { id: 'memory', name: 'Memory', description: 'Daily notes and session memory', status: 'active', category: 'System', folder: '~/clawd/memory/', updatedAt: '2026-02-14' },
@@ -146,7 +150,7 @@ const projects: Project[] = [
 
 const categories: Category[] = ['all', 'OpenClaw Agency', 'Nodefy Internal', 'Lead Gen Tools', 'Client Websites', 'AI Projects', 'Experiments', 'System']
 
-const LAST_UPDATED = '2026-03-02 09:00'
+const LAST_UPDATED = '2026-03-05 09:00'
 
 export default function Dashboard() {
   const [selectedCategory, setSelectedCategory] = useState<Category>('all')
