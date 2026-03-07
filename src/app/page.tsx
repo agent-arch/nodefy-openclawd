@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 // ============================================
 // OPENCLAW DASHBOARD
-// Last Updated: 2026-03-05 09:00
+// Last Updated: 2026-03-07 09:00
 // Nodefy AI Agent Workspace
 // ============================================
 
@@ -140,6 +140,14 @@ const projects: Project[] = [
   { id: 'estg-voorstel', name: 'ESTG Voorstel', description: 'ESTG proposal/pitch site', status: 'active', category: 'Client Websites', folder: '~/clawd/estg-voorstel/', updatedAt: '2026-03-04' },
   { id: 'nodefy-website', name: 'Nodefy Website', description: 'Main Nodefy website (Next.js)', status: 'active', category: 'Nodefy Internal', folder: '~/clawd/nodefy-website/', updatedAt: '2026-03-04' },
 
+  // === NEW (auto-detected 2026-03-07) ===
+  { id: 'nodefy-adscaler', name: 'Nodefy AdScaler', description: 'Ad scaling automation tool', status: 'active', category: 'AI Projects', folder: '~/clawd/nodefy-adscaler/', updatedAt: '2026-03-07' },
+  { id: 'nodefy-budget-pacer', name: 'Nodefy Budget Pacer', description: 'Budget pacing & management tool', status: 'active', category: 'Lead Gen Tools', folder: '~/clawd/nodefy-budget-pacer/', updatedAt: '2026-03-07' },
+  { id: 'nodefy-leadmagnet', name: 'Nodefy Lead Magnet', description: 'Lead magnet creation tool', status: 'active', category: 'Lead Gen Tools', folder: '~/clawd/nodefy-leadmagnet/', updatedAt: '2026-03-07' },
+  { id: 'nodefy-proposals', name: 'Nodefy Proposals', description: 'Proposal generation tool', status: 'active', category: 'Nodefy Internal', folder: '~/clawd/nodefy-proposals/', updatedAt: '2026-03-07' },
+  { id: 'surebird-redesign', name: 'Surebird Redesign', description: 'Client website redesign', status: 'active', category: 'Client Websites', folder: '~/clawd/surebird-redesign/', updatedAt: '2026-03-07' },
+  { id: 'nodefy-admanager', name: 'Nodefy Ad Manager', description: 'Ad management platform', status: 'active', category: 'AI Projects', folder: '~/clawd/nodefy-admanager/', updatedAt: '2026-03-07' },
+
   // === SYSTEM ===
   { id: 'skills', name: 'Skills', description: 'OpenClaw skill definitions', status: 'active', category: 'System', folder: '~/clawd/skills/', updatedAt: '2026-02-14' },
   { id: 'memory', name: 'Memory', description: 'Daily notes and session memory', status: 'active', category: 'System', folder: '~/clawd/memory/', updatedAt: '2026-02-14' },
@@ -150,7 +158,7 @@ const projects: Project[] = [
 
 const categories: Category[] = ['all', 'OpenClaw Agency', 'Nodefy Internal', 'Lead Gen Tools', 'Client Websites', 'AI Projects', 'Experiments', 'System']
 
-const LAST_UPDATED = '2026-03-05 09:00'
+const LAST_UPDATED = '2026-03-07 09:00'
 
 export default function Dashboard() {
   const [selectedCategory, setSelectedCategory] = useState<Category>('all')
