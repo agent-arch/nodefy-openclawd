@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 // ============================================
 // OPENCLAW DASHBOARD
-// Last Updated: 2026-03-07 09:00
+// Last Updated: 2026-03-09 09:00
 // Nodefy AI Agent Workspace
 // ============================================
 
@@ -132,21 +132,28 @@ const projects: Project[] = [
   // === NEW (auto-detected 2026-02-25) ===
   { id: 'nodefy-onboarding', name: 'Client Onboarding Portal', description: '6-step client onboarding met auto-save en admin panel', status: 'active', category: 'Nodefy Internal', url: 'https://nodefy-onboarding.vercel.app', folder: '~/clawd/nodefy-onboarding/', updatedAt: '2026-02-25' },
 
+  // === NEW (auto-detected 2026-03-08) ===
+  { id: 'nodefy-onboarding-v2', name: 'Onboarding Portal v2', description: 'Next-gen client onboarding portal', status: 'active', category: 'Nodefy Internal', folder: '~/clawd/nodefy-onboarding-v2/', updatedAt: '2026-03-08' },
+
   // === NEW (auto-detected 2026-02-28) ===
   { id: 'nodefy-funnel-planner', name: 'Nodefy Funnel Planner', description: 'Funnel planning tool', status: 'active', category: 'Lead Gen Tools', url: 'https://nodefy-funnel-planner.vercel.app', folder: '~/clawd/nodefy-funnel-planner/', updatedAt: '2026-02-28' },
   { id: 'nodefy-seo-scanner', name: 'Nodefy SEO Scanner', description: 'SEO scanning & analysis tool', status: 'active', category: 'Lead Gen Tools', url: 'https://nodefy-seo-scanner.vercel.app', folder: '~/clawd/nodefy-seo-scanner/', updatedAt: '2026-02-28' },
 
   // === NEW (auto-detected 2026-03-04) ===
-  { id: 'estg-voorstel', name: 'ESTG Voorstel', description: 'ESTG proposal/pitch site', status: 'active', category: 'Client Websites', folder: '~/clawd/estg-voorstel/', updatedAt: '2026-03-04' },
-  { id: 'nodefy-website', name: 'Nodefy Website', description: 'Main Nodefy website (Next.js)', status: 'active', category: 'Nodefy Internal', folder: '~/clawd/nodefy-website/', updatedAt: '2026-03-04' },
+  { id: 'estg-voorstel', name: 'ESTG Voorstel', description: 'ESTG proposal/pitch site', status: 'active', category: 'Client Websites', url: 'https://estg-voorstel.vercel.app', folder: '~/clawd/estg-voorstel/', updatedAt: '2026-03-04' },
+  { id: 'nodefy-website', name: 'Nodefy Website', description: 'Main Nodefy website (Next.js)', status: 'active', category: 'Nodefy Internal', url: 'https://nodefy-website.vercel.app', folder: '~/clawd/nodefy-website/', updatedAt: '2026-03-04' },
 
   // === NEW (auto-detected 2026-03-07) ===
-  { id: 'nodefy-adscaler', name: 'Nodefy AdScaler', description: 'Ad scaling automation tool', status: 'active', category: 'AI Projects', folder: '~/clawd/nodefy-adscaler/', updatedAt: '2026-03-07' },
-  { id: 'nodefy-budget-pacer', name: 'Nodefy Budget Pacer', description: 'Budget pacing & management tool', status: 'active', category: 'Lead Gen Tools', folder: '~/clawd/nodefy-budget-pacer/', updatedAt: '2026-03-07' },
-  { id: 'nodefy-leadmagnet', name: 'Nodefy Lead Magnet', description: 'Lead magnet creation tool', status: 'active', category: 'Lead Gen Tools', folder: '~/clawd/nodefy-leadmagnet/', updatedAt: '2026-03-07' },
-  { id: 'nodefy-proposals', name: 'Nodefy Proposals', description: 'Proposal generation tool', status: 'active', category: 'Nodefy Internal', folder: '~/clawd/nodefy-proposals/', updatedAt: '2026-03-07' },
-  { id: 'surebird-redesign', name: 'Surebird Redesign', description: 'Client website redesign', status: 'active', category: 'Client Websites', folder: '~/clawd/surebird-redesign/', updatedAt: '2026-03-07' },
-  { id: 'nodefy-admanager', name: 'Nodefy Ad Manager', description: 'Ad management platform', status: 'active', category: 'AI Projects', folder: '~/clawd/nodefy-admanager/', updatedAt: '2026-03-07' },
+  { id: 'nodefy-adscaler', name: 'Nodefy AdScaler', description: 'Ad scaling automation tool', status: 'active', category: 'AI Projects', url: 'https://nodefy-adscaler.vercel.app', folder: '~/clawd/nodefy-adscaler/', updatedAt: '2026-03-07' },
+  { id: 'nodefy-budget-pacer', name: 'Nodefy Budget Pacer', description: 'Budget pacing & management tool', status: 'active', category: 'Lead Gen Tools', url: 'https://nodefy-budget-pacer.vercel.app', folder: '~/clawd/nodefy-budget-pacer/', updatedAt: '2026-03-07' },
+  { id: 'nodefy-leadmagnet', name: 'Nodefy Lead Magnet', description: 'Lead magnet creation tool', status: 'active', category: 'Lead Gen Tools', url: 'https://nodefy-leadmagnet.vercel.app', folder: '~/clawd/nodefy-leadmagnet/', updatedAt: '2026-03-07' },
+  { id: 'nodefy-proposals', name: 'Nodefy Proposals', description: 'Proposal generation tool', status: 'active', category: 'Nodefy Internal', url: 'https://nodefy-proposals.vercel.app', folder: '~/clawd/nodefy-proposals/', updatedAt: '2026-03-07' },
+  { id: 'surebird-redesign', name: 'Surebird Redesign', description: 'Client website redesign', status: 'active', category: 'Client Websites', url: 'https://surebird-redesign.vercel.app', folder: '~/clawd/surebird-redesign/', updatedAt: '2026-03-07' },
+  { id: 'nodefy-admanager', name: 'Nodefy Ad Manager', description: 'Ad management platform', status: 'active', category: 'AI Projects', url: 'https://nodefy-admanager.vercel.app', folder: '~/clawd/nodefy-admanager/', updatedAt: '2026-03-07' },
+  { id: 'nodefy-methods', name: 'Nodefy Methods', description: 'Methodology & process documentation', status: 'active', category: 'Nodefy Internal', url: 'https://nodefy-methods.vercel.app', folder: '~/clawd/nodefy-methods/', updatedAt: '2026-03-07' },
+
+  // === NEW (auto-detected 2026-03-09) ===
+  { id: 'nodefy-tools', name: 'Nodefy Tools', description: 'Internal tools collection (Next.js)', status: 'active', category: 'Nodefy Internal', folder: '~/clawd/nodefy-tools/', updatedAt: '2026-03-09' },
 
   // === SYSTEM ===
   { id: 'skills', name: 'Skills', description: 'OpenClaw skill definitions', status: 'active', category: 'System', folder: '~/clawd/skills/', updatedAt: '2026-02-14' },
@@ -158,17 +165,23 @@ const projects: Project[] = [
 
 const categories: Category[] = ['all', 'OpenClaw Agency', 'Nodefy Internal', 'Lead Gen Tools', 'Client Websites', 'AI Projects', 'Experiments', 'System']
 
-const LAST_UPDATED = '2026-03-07 09:00'
+const LAST_UPDATED = '2026-03-09 09:00'
+
+type StatusFilter = 'all' | 'active' | 'done' | 'paused' | 'blocked'
 
 export default function Dashboard() {
   const [selectedCategory, setSelectedCategory] = useState<Category>('all')
+  const [selectedStatus, setSelectedStatus] = useState<StatusFilter>('all')
+  const [onlyWithUrl, setOnlyWithUrl] = useState(false)
   const [searchQuery, setSearchQuery] = useState('')
 
   const filteredProjects = projects.filter(p => {
     const matchesCategory = selectedCategory === 'all' || p.category === selectedCategory
+    const matchesStatus = selectedStatus === 'all' || p.status === selectedStatus
+    const matchesUrl = !onlyWithUrl || !!p.url
     const matchesSearch = p.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
                          p.description.toLowerCase().includes(searchQuery.toLowerCase())
-    return matchesCategory && matchesSearch
+    return matchesCategory && matchesSearch && matchesStatus && matchesUrl
   })
 
   const stats = {
@@ -215,28 +228,57 @@ export default function Dashboard() {
         </div>
 
         {/* Search & Filters */}
-        <div className="flex items-center gap-4 mb-8 flex-wrap">
-          <input
-            type="text"
-            placeholder="Search projects..."
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            className="px-4 py-2 rounded-lg bg-[#161B22] border border-gray-800 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-gray-600 w-64"
-          />
-          <div className="flex gap-2 flex-wrap">
-            {categories.map((cat) => (
-              <button
-                key={cat}
-                onClick={() => setSelectedCategory(cat)}
-                className={`px-3 py-1.5 rounded-md text-sm transition-colors ${
-                  selectedCategory === cat
-                    ? 'bg-blue-600 text-white'
-                    : 'bg-[#161B22] text-gray-400 border border-gray-800 hover:border-gray-600'
-                }`}
-              >
-                {cat === 'all' ? 'All' : cat}
-              </button>
-            ))}
+        <div className="flex flex-col gap-3 mb-8">
+          <div className="flex items-center gap-4 flex-wrap">
+            <input
+              type="text"
+              placeholder="Search projects..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="px-4 py-2 rounded-lg bg-[#161B22] border border-gray-800 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-gray-600 w-64"
+            />
+            <div className="flex gap-2 flex-wrap">
+              {categories.map((cat) => (
+                <button
+                  key={cat}
+                  onClick={() => setSelectedCategory(cat)}
+                  className={`px-3 py-1.5 rounded-md text-sm transition-colors ${
+                    selectedCategory === cat
+                      ? 'bg-blue-600 text-white'
+                      : 'bg-[#161B22] text-gray-400 border border-gray-800 hover:border-gray-600'
+                  }`}
+                >
+                  {cat === 'all' ? 'All' : cat}
+                </button>
+              ))}
+            </div>
+          </div>
+          <div className="flex items-center gap-4 flex-wrap">
+            <div className="flex gap-2 flex-wrap">
+              {(['all', 'active', 'done', 'paused', 'blocked'] as StatusFilter[]).map((status) => (
+                <button
+                  key={status}
+                  onClick={() => setSelectedStatus(status)}
+                  className={`px-3 py-1.5 rounded-md text-sm transition-colors ${
+                    selectedStatus === status
+                      ? 'bg-blue-600 text-white'
+                      : 'bg-[#161B22] text-gray-400 border border-gray-800 hover:border-gray-600'
+                  }`}
+                >
+                  {status === 'all' ? 'All Statuses' : status.charAt(0).toUpperCase() + status.slice(1)}
+                </button>
+              ))}
+            </div>
+            <button
+              onClick={() => setOnlyWithUrl(!onlyWithUrl)}
+              className={`px-3 py-1.5 rounded-md text-sm transition-colors ${
+                onlyWithUrl
+                  ? 'bg-purple-600 text-white'
+                  : 'bg-[#161B22] text-gray-400 border border-gray-800 hover:border-gray-600'
+              }`}
+            >
+              🔗 Alleen met Vercel URL
+            </button>
           </div>
         </div>
 
