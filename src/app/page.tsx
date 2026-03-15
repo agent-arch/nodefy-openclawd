@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 // ============================================
 // OPENCLAW DASHBOARD
-// Last Updated: 2026-03-11 09:00
+// Last Updated: 2026-03-15 09:00
 // Nodefy AI Agent Workspace
 // ============================================
 
@@ -162,6 +162,20 @@ const projects: Project[] = [
   // === NEW (auto-detected 2026-03-11) ===
   { id: 'nodefy-brainstorm', name: 'Nodefy Brainstorm', description: 'Partnership brainstorm & planning tool (Next.js)', status: 'active', category: 'Nodefy Internal', folder: '~/clawd/nodefy-brainstorm/', updatedAt: '2026-03-11' },
 
+  // === NEW (auto-detected 2026-03-12) ===
+  { id: 'nodefy-todo', name: 'Nodefy Todo', description: 'Task management app (Next.js)', status: 'active', category: 'Nodefy Internal', folder: '~/clawd/nodefy-todo/', updatedAt: '2026-03-12' },
+  { id: 'yoisho-analyse', name: 'Yoisho Analyse', description: 'Yoisho client analysis/report', status: 'done', category: 'Client Websites', folder: '~/clawd/yoisho-analyse/', updatedAt: '2026-03-12' },
+
+  // === NEW (auto-detected 2026-03-14) ===
+  { id: 'benjis-redesign', name: 'Benjis Redesign', description: 'Client website redesign (Next.js)', status: 'active', category: 'Client Websites', folder: '~/clawd/benjis-redesign/', updatedAt: '2026-03-14' },
+  { id: 'moots-redesign', name: 'Moots Redesign', description: 'Client website redesign (Next.js)', status: 'active', category: 'Client Websites', folder: '~/clawd/moots-redesign/', updatedAt: '2026-03-14' },
+  { id: 'nodefy-openclawd', name: 'OpenClaw Dashboard', description: 'This project dashboard (Next.js)', status: 'active', category: 'System', url: 'https://nodefy-openclawd.vercel.app', folder: '~/clawd/nodefy-openclawd/', updatedAt: '2026-03-14' },
+  { id: 'nodefy-pandenchecker', name: 'Nodefy Pandenchecker', description: 'Panden/property checker tool (Next.js)', status: 'active', category: 'Lead Gen Tools', folder: '~/clawd/nodefy-pandenchecker/', updatedAt: '2026-03-14' },
+  { id: 'lor-finance', name: 'LOR Finance', description: 'Finance landing page', status: 'done', category: 'Client Websites', folder: '~/clawd/lor-finance/', updatedAt: '2026-03-14' },
+
+  // === NEW (auto-detected 2026-03-15) ===
+  { id: 'nodefy-bedrijfsplan-site', name: 'Nodefy Bedrijfsplan Site', description: 'Bedrijfsplan presentation site (Next.js)', status: 'active', category: 'Nodefy Internal', folder: '~/clawd/nodefy-bedrijfsplan-site/', updatedAt: '2026-03-15' },
+
   // === SYSTEM ===
   { id: 'skills', name: 'Skills', description: 'OpenClaw skill definitions', status: 'active', category: 'System', folder: '~/clawd/skills/', updatedAt: '2026-02-14' },
   { id: 'memory', name: 'Memory', description: 'Daily notes and session memory', status: 'active', category: 'System', folder: '~/clawd/memory/', updatedAt: '2026-02-14' },
@@ -172,7 +186,7 @@ const projects: Project[] = [
 
 const categories: Category[] = ['all', 'OpenClaw Agency', 'Nodefy Internal', 'Lead Gen Tools', 'Client Websites', 'AI Projects', 'Experiments', 'System']
 
-const LAST_UPDATED = '2026-03-11 09:00'
+const LAST_UPDATED = '2026-03-15 09:00'
 
 type StatusFilter = 'all' | 'active' | 'done' | 'paused' | 'blocked'
 
