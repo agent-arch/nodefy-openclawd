@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 // ============================================
 // OPENCLAW DASHBOARD
-// Last Updated: 2026-03-20 09:00
+// Last Updated: 2026-03-22 09:00
 // Nodefy AI Agent Workspace
 // ============================================
 
@@ -183,6 +183,9 @@ const projects: Project[] = [
   { id: 'cafe-de-wetering', name: 'Cafe de Wetering', description: 'Client website (HTML/Vercel)', status: 'active', category: 'Client Websites', folder: '~/clawd/cafe-de-wetering/', updatedAt: '2026-03-20' },
   { id: 'douwe-website', name: 'Douwe Website', description: 'Client website (static HTML)', status: 'done', category: 'Client Websites', folder: '~/clawd/douwe-website/', updatedAt: '2026-03-20' },
 
+  // === NEW (auto-detected 2026-03-22) ===
+  { id: 'nodefy-marketing-grader', name: 'Nodefy Marketing Grader', description: 'Marketing grading/scoring tool (Next.js)', status: 'active', category: 'Lead Gen Tools', folder: '~/clawd/nodefy-marketing-grader/', updatedAt: '2026-03-22' },
+
   // === SYSTEM ===
   { id: 'skills', name: 'Skills', description: 'OpenClaw skill definitions', status: 'active', category: 'System', folder: '~/clawd/skills/', updatedAt: '2026-02-14' },
   { id: 'memory', name: 'Memory', description: 'Daily notes and session memory', status: 'active', category: 'System', folder: '~/clawd/memory/', updatedAt: '2026-02-14' },
@@ -193,7 +196,7 @@ const projects: Project[] = [
 
 const categories: Category[] = ['all', 'OpenClaw Agency', 'Nodefy Internal', 'Lead Gen Tools', 'Client Websites', 'AI Projects', 'Experiments', 'System']
 
-const LAST_UPDATED = '2026-03-20 09:00'
+const LAST_UPDATED = '2026-03-22 09:00'
 
 type StatusFilter = 'all' | 'active' | 'done' | 'paused' | 'blocked'
 
