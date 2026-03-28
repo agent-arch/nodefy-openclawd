@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 // ============================================
 // OPENCLAW DASHBOARD
-// Last Updated: 2026-03-25 09:00
+// Last Updated: 2026-03-28 09:00
 // Nodefy AI Agent Workspace
 // ============================================
 
@@ -189,6 +189,10 @@ const projects: Project[] = [
   // === NEW (auto-detected 2026-03-24) ===
   { id: 'huizentocht', name: 'Huizentocht', description: 'House hunting/property project', status: 'active', category: 'Experiments', folder: '~/clawd/huizentocht/', updatedAt: '2026-03-24' },
   { id: 'nodefy-skills', name: 'Nodefy Skills', description: 'Skill definitions & templates', status: 'active', category: 'System', folder: '~/clawd/nodefy-skills/', updatedAt: '2026-03-24' },
+
+  // === NEW (auto-detected 2026-03-28) ===
+  { id: 'carelli-report', name: 'Carelli Report', description: 'Client report (HTML)', status: 'done', category: 'Client Websites', folder: '~/clawd/carelli-report/', updatedAt: '2026-03-25' },
+  { id: 'scaleup-research', name: 'Scaleup Research', description: 'Scaleup research report', status: 'done', category: 'Nodefy Internal', folder: '~/clawd/scaleup-research/', updatedAt: '2026-03-24' },
 
   // === SYSTEM ===
   { id: 'skills', name: 'Skills', description: 'OpenClaw skill definitions', status: 'active', category: 'System', folder: '~/clawd/skills/', updatedAt: '2026-02-14' },
