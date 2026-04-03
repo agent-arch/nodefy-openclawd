@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 // ============================================
 // OPENCLAW DASHBOARD
-// Last Updated: 2026-04-01 09:00
+// Last Updated: 2026-04-03 09:00
 // Nodefy AI Agent Workspace
 // ============================================
 
@@ -199,6 +199,13 @@ const projects: Project[] = [
   { id: 'nodefy-geo-checker', name: 'Nodefy Geo Checker', description: 'Geolocation checking tool (Next.js)', status: 'active', category: 'Lead Gen Tools', folder: '~/clawd/nodefy-geo-checker/', updatedAt: '2026-03-31' },
   { id: 'shoprise-website', name: 'Shoprise Website', description: 'Shoprise client website (Next.js)', status: 'active', category: 'Client Websites', folder: '~/clawd/shoprise-website/', updatedAt: '2026-03-31' },
 
+  // === NEW (auto-detected 2026-04-03) ===
+  { id: 'art-vastgoed', name: 'Art Vastgoed', description: 'Property/real estate art showcase (HTML)', status: 'active', category: 'Client Websites', folder: '~/clawd/art-vastgoed/', updatedAt: '2026-04-03' },
+  { id: 'paperclip-os', name: 'Paperclip OS', description: 'Open-source AI agent framework', status: 'active', category: 'AI Projects', folder: '~/clawd/paperclip-os/', updatedAt: '2026-04-03' },
+  { id: 'quiz-wiecher', name: 'Quiz Wiecher', description: 'Interactive quiz app (Next.js)', status: 'active', category: 'Experiments', folder: '~/clawd/quiz-wiecher/', updatedAt: '2026-04-03' },
+  { id: 'unity-units', name: 'Unity Units', description: 'Data enrichment & scraping scripts', status: 'active', category: 'Lead Gen Tools', folder: '~/clawd/unity-units/', updatedAt: '2026-04-03' },
+  { id: 'nodefy-businessplan', name: 'Nodefy Businessplan', description: 'Nodefy business plan document', status: 'done', category: 'Nodefy Internal', folder: '~/clawd/nodefy-businessplan/', updatedAt: '2026-04-03' },
+
   // === SYSTEM ===
   { id: 'skills', name: 'Skills', description: 'OpenClaw skill definitions', status: 'active', category: 'System', folder: '~/clawd/skills/', updatedAt: '2026-02-14' },
   { id: 'memory', name: 'Memory', description: 'Daily notes and session memory', status: 'active', category: 'System', folder: '~/clawd/memory/', updatedAt: '2026-02-14' },
@@ -209,7 +216,7 @@ const projects: Project[] = [
 
 const categories: Category[] = ['all', 'OpenClaw Agency', 'Nodefy Internal', 'Lead Gen Tools', 'Client Websites', 'AI Projects', 'Experiments', 'System']
 
-const LAST_UPDATED = '2026-04-01 09:00'
+const LAST_UPDATED = '2026-04-03 09:00'
 
 type StatusFilter = 'all' | 'active' | 'done' | 'paused' | 'blocked'
 
