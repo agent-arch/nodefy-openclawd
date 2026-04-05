@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 // ============================================
 // OPENCLAW DASHBOARD
-// Last Updated: 2026-04-04 09:00
+// Last Updated: 2026-04-05 09:00
 // Nodefy AI Agent Workspace
 // ============================================
 
@@ -206,6 +206,12 @@ const projects: Project[] = [
   { id: 'unity-units', name: 'Unity Units', description: 'Data enrichment & scraping scripts', status: 'active', category: 'Lead Gen Tools', folder: '~/clawd/unity-units/', updatedAt: '2026-04-03' },
   { id: 'nodefy-businessplan', name: 'Nodefy Businessplan', description: 'Nodefy business plan document', status: 'done', category: 'Nodefy Internal', folder: '~/clawd/nodefy-businessplan/', updatedAt: '2026-04-03' },
 
+  // === NEW (auto-detected 2026-04-05) ===
+  { id: 'mirofish', name: 'MiroFish', description: 'AI fish identification/analysis tool', status: 'active', category: 'AI Projects', folder: '~/clawd/mirofish/', updatedAt: '2026-04-05' },
+  { id: 'paperclip-nodefy', name: 'Paperclip × Nodefy', description: 'Paperclip infrastructure integration', status: 'active', category: 'AI Projects', folder: '~/clawd/paperclip-nodefy/', updatedAt: '2026-04-05' },
+  { id: 'tecan-sa-crm', name: 'Tecan SA CRM', description: 'CRM data & venue analysis (60 venues)', status: 'done', category: 'Client Websites', folder: '~/clawd/tecan-sa-crm/', updatedAt: '2026-04-05' },
+  { id: 'pragma-docs', name: 'Pragma Business', description: 'Pragma AI business plan & docs', status: 'active', category: 'AI Projects', folder: '~/clawd/pragma/', updatedAt: '2026-04-05' },
+
   // === SYSTEM ===
   { id: 'skills', name: 'Skills', description: 'OpenClaw skill definitions', status: 'active', category: 'System', folder: '~/clawd/skills/', updatedAt: '2026-02-14' },
   { id: 'memory', name: 'Memory', description: 'Daily notes and session memory', status: 'active', category: 'System', folder: '~/clawd/memory/', updatedAt: '2026-02-14' },
@@ -216,7 +222,7 @@ const projects: Project[] = [
 
 const categories: Category[] = ['all', 'OpenClaw Agency', 'Nodefy Internal', 'Lead Gen Tools', 'Client Websites', 'AI Projects', 'Experiments', 'System']
 
-const LAST_UPDATED = '2026-04-04 09:00'
+const LAST_UPDATED = '2026-04-05 09:00'
 
 type StatusFilter = 'all' | 'active' | 'done' | 'paused' | 'blocked'
 
