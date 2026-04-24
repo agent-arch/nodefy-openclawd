@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 // ============================================
 // OPENCLAW DASHBOARD
-// Last Updated: 2026-04-13 09:00
+// Last Updated: 2026-04-24 09:00
 // Nodefy AI Agent Workspace
 // ============================================
 
@@ -212,6 +212,25 @@ const projects: Project[] = [
   { id: 'tecan-sa-crm', name: 'Tecan SA CRM', description: 'CRM data & venue analysis (60 venues)', status: 'done', category: 'Client Websites', folder: '~/clawd/tecan-sa-crm/', updatedAt: '2026-04-05' },
   { id: 'pragma-docs', name: 'Pragma Business', description: 'Pragma AI business plan & docs', status: 'active', category: 'AI Projects', folder: '~/clawd/pragma/', updatedAt: '2026-04-05' },
 
+  // === NEW (auto-detected 2026-04-14) ===
+  { id: 'nodefy-audit', name: 'Nodefy Audit', description: 'Advanced audit platform (Vercel)', status: 'active', category: 'Lead Gen Tools', folder: '~/clawd/nodefy-audit/', updatedAt: '2026-04-14' },
+  { id: 'nodefy-shared', name: 'Nodefy Shared', description: 'Shared components & utilities', status: 'active', category: 'Nodefy Internal', url: 'https://nodefy-shared.vercel.app', folder: '~/clawd/nodefy-shared/', updatedAt: '2026-04-14' },
+  { id: '3d-models', name: '3D Models', description: 'Collection of 3D model assets', status: 'active', category: 'System', folder: '~/clawd/3d-models/', updatedAt: '2026-04-14' },
+
+  // === NEW (auto-detected 2026-04-21) ===
+  { id: 'mckenna-7day-app', name: 'McKenna 7-Day App', description: '7-day app challenge project (Next.js)', status: 'active', category: 'Experiments', folder: '~/clawd/mckenna-7day-app/', updatedAt: '2026-04-21' },
+
+  // === NEW (auto-detected 2026-04-22) ===
+  { id: 'nodefy-ai-lead-scorer', name: 'Nodefy AI Lead Scorer', description: 'AI-powered lead scoring system (Next.js)', status: 'active', category: 'AI Projects', folder: '~/clawd/nodefy-ai-lead-scorer/', updatedAt: '2026-04-22' },
+
+  // === NEW (auto-detected 2026-04-24) ===
+  { id: 'nodefy-ai-assistant', name: 'Nodefy AI Assistant', description: 'AI assistant platform (Next.js)', status: 'active', category: 'AI Projects', folder: '~/clawd/nodefy-ai-assistant/', updatedAt: '2026-04-24' },
+  { id: 'nodefy-ai-content-generator', name: 'Nodefy AI Content Generator', description: 'AI content generation tool', status: 'active', category: 'AI Projects', folder: '~/clawd/nodefy-ai-content-generator/', updatedAt: '2026-04-24' },
+  { id: 'seo-scans', name: 'SEO Scans', description: 'SEO scan reports & analysis collection', status: 'active', category: 'Lead Gen Tools', folder: '~/clawd/seo-scans/', updatedAt: '2026-04-24' },
+  { id: 'skills-research', name: 'Skills Research', description: 'OpenClaw skills research & development', status: 'active', category: 'System', folder: '~/clawd/skills-research/', updatedAt: '2026-04-24' },
+  { id: 'chase-repos', name: 'Chase Repos', description: 'Repository chase & tracking project', status: 'active', category: 'System', folder: '~/clawd/chase-repos/', updatedAt: '2026-04-24' },
+  { id: 'brand-assets', name: 'Brand Assets', description: 'Nodefy brand assets & design system', status: 'active', category: 'System', folder: '~/clawd/brand-assets/', updatedAt: '2026-04-24' },
+
   // === SYSTEM ===
   { id: 'skills', name: 'Skills', description: 'OpenClaw skill definitions', status: 'active', category: 'System', folder: '~/clawd/skills/', updatedAt: '2026-02-14' },
   { id: 'memory', name: 'Memory', description: 'Daily notes and session memory', status: 'active', category: 'System', folder: '~/clawd/memory/', updatedAt: '2026-02-14' },
@@ -222,7 +241,7 @@ const projects: Project[] = [
 
 const categories: Category[] = ['all', 'OpenClaw Agency', 'Nodefy Internal', 'Lead Gen Tools', 'Client Websites', 'AI Projects', 'Experiments', 'System']
 
-const LAST_UPDATED = '2026-04-13 09:00'
+const LAST_UPDATED = '2026-04-24 09:00'
 
 type StatusFilter = 'all' | 'active' | 'done' | 'paused' | 'blocked'
 
