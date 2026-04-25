@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 // ============================================
 // OPENCLAW DASHBOARD
-// Last Updated: 2026-04-24 09:00
+// Last Updated: 2026-04-25 09:00
 // Nodefy AI Agent Workspace
 // ============================================
 
@@ -231,6 +231,9 @@ const projects: Project[] = [
   { id: 'chase-repos', name: 'Chase Repos', description: 'Repository chase & tracking project', status: 'active', category: 'System', folder: '~/clawd/chase-repos/', updatedAt: '2026-04-24' },
   { id: 'brand-assets', name: 'Brand Assets', description: 'Nodefy brand assets & design system', status: 'active', category: 'System', folder: '~/clawd/brand-assets/', updatedAt: '2026-04-24' },
 
+  // === NEW (auto-detected 2026-04-25) ===
+  { id: 'voice-webhook', name: 'Voice Webhook', description: 'Voice processing webhook server (Node.js)', status: 'active', category: 'AI Projects', folder: '~/clawd/voice-webhook/', updatedAt: '2026-04-25' },
+
   // === SYSTEM ===
   { id: 'skills', name: 'Skills', description: 'OpenClaw skill definitions', status: 'active', category: 'System', folder: '~/clawd/skills/', updatedAt: '2026-02-14' },
   { id: 'memory', name: 'Memory', description: 'Daily notes and session memory', status: 'active', category: 'System', folder: '~/clawd/memory/', updatedAt: '2026-02-14' },
@@ -241,7 +244,7 @@ const projects: Project[] = [
 
 const categories: Category[] = ['all', 'OpenClaw Agency', 'Nodefy Internal', 'Lead Gen Tools', 'Client Websites', 'AI Projects', 'Experiments', 'System']
 
-const LAST_UPDATED = '2026-04-24 09:00'
+const LAST_UPDATED = '2026-04-25 09:00'
 
 type StatusFilter = 'all' | 'active' | 'done' | 'paused' | 'blocked'
 
