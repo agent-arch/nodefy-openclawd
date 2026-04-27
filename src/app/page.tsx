@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 // ============================================
 // OPENCLAW DASHBOARD
-// Last Updated: 2026-04-26 09:00
+// Last Updated: 2026-04-27 09:00
 // Nodefy AI Agent Workspace
 // ============================================
 
@@ -238,6 +238,11 @@ const projects: Project[] = [
   { id: 'nodefy-linkedin-automation', name: 'LinkedIn Automation', description: 'LinkedIn content automation & analytics platform (Next.js)', status: 'active', category: 'AI Projects', folder: '~/clawd/nodefy-linkedin-automation/', updatedAt: '2026-04-26' },
   { id: 'nodefy-agent-builder', name: 'AI Agent Builder', description: 'Visual no-code AI agent designer with drag & drop interface (Next.js)', status: 'active', category: 'AI Projects', folder: '~/clawd/nodefy-agent-builder/', updatedAt: '2026-04-26' },
 
+  // === NEW (auto-detected 2026-04-27) ===
+  { id: 'agents-apollo', name: 'Agents Apollo', description: 'Apollo agent configuration', status: 'active', category: 'System', folder: '~/clawd/agents/', updatedAt: '2026-04-27' },
+  { id: 'automation-output', name: 'Automation Output', description: 'Automation reports & client alerts', status: 'active', category: 'System', folder: '~/clawd/automation-output/', updatedAt: '2026-04-27' },
+  { id: 'research-docs', name: 'Research Docs', description: 'Claude Code ecosystem & trading strategy research', status: 'active', category: 'Experiments', folder: '~/clawd/research/', updatedAt: '2026-04-27' },
+
   // === SYSTEM ===
   { id: 'skills', name: 'Skills', description: 'OpenClaw skill definitions', status: 'active', category: 'System', folder: '~/clawd/skills/', updatedAt: '2026-02-14' },
   { id: 'memory', name: 'Memory', description: 'Daily notes and session memory', status: 'active', category: 'System', folder: '~/clawd/memory/', updatedAt: '2026-02-14' },
@@ -248,7 +253,7 @@ const projects: Project[] = [
 
 const categories: Category[] = ['all', 'OpenClaw Agency', 'Nodefy Internal', 'Lead Gen Tools', 'Client Websites', 'AI Projects', 'Experiments', 'System']
 
-const LAST_UPDATED = '2026-04-26 09:00'
+const LAST_UPDATED = '2026-04-27 09:00'
 
 type StatusFilter = 'all' | 'active' | 'done' | 'paused' | 'blocked'
 
