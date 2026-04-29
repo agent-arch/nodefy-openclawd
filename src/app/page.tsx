@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 // ============================================
 // OPENCLAW DASHBOARD
-// Last Updated: 2026-04-28 09:00
+// Last Updated: 2026-04-29 09:00
 // Nodefy AI Agent Workspace
 // ============================================
 
@@ -246,6 +246,11 @@ const projects: Project[] = [
   // === NEW (auto-detected 2026-04-28) ===
   { id: 'nodefy-ai-marketing-assistant', name: 'AI Marketing Assistant', description: 'SaaS landing page for AI-powered marketing automation platform (Next.js)', status: 'active', category: 'AI Projects', folder: '~/clawd/nodefy-ai-marketing-assistant/', updatedAt: '2026-04-28' },
 
+  // === NEW (auto-detected 2026-04-29) ===
+  { id: 'canvas', name: 'Canvas UI', description: 'Interactive canvas/drawing tool (HTML)', status: 'active', category: 'Experiments', folder: '~/clawd/canvas/', updatedAt: '2026-04-29' },
+  { id: 'marketing-audit-landing', name: 'Marketing Audit Landing', description: 'Landing page for marketing audit service (HTML)', status: 'active', category: 'Lead Gen Tools', folder: '~/clawd/products/marketing-audit-landing/', updatedAt: '2026-04-29' },
+  { id: 'marketing-dashboard', name: 'Marketing Dashboard', description: 'Marketing performance dashboard (HTML)', status: 'active', category: 'Lead Gen Tools', folder: '~/clawd/products/marketing-dashboard/', updatedAt: '2026-04-29' },
+
   // === SYSTEM ===
   { id: 'skills', name: 'Skills', description: 'OpenClaw skill definitions', status: 'active', category: 'System', folder: '~/clawd/skills/', updatedAt: '2026-02-14' },
   { id: 'memory', name: 'Memory', description: 'Daily notes and session memory', status: 'active', category: 'System', folder: '~/clawd/memory/', updatedAt: '2026-02-14' },
@@ -256,7 +261,7 @@ const projects: Project[] = [
 
 const categories: Category[] = ['all', 'OpenClaw Agency', 'Nodefy Internal', 'Lead Gen Tools', 'Client Websites', 'AI Projects', 'Experiments', 'System']
 
-const LAST_UPDATED = '2026-04-28 09:00'
+const LAST_UPDATED = '2026-04-29 09:00'
 
 type StatusFilter = 'all' | 'active' | 'done' | 'paused' | 'blocked'
 
