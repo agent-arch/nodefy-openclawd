@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 // ============================================
 // OPENCLAW DASHBOARD
-// Last Updated: 2026-04-29 09:00
+// Last Updated: 2026-04-30 09:00
 // Nodefy AI Agent Workspace
 // ============================================
 
@@ -251,6 +251,11 @@ const projects: Project[] = [
   { id: 'marketing-audit-landing', name: 'Marketing Audit Landing', description: 'Landing page for marketing audit service (HTML)', status: 'active', category: 'Lead Gen Tools', folder: '~/clawd/products/marketing-audit-landing/', updatedAt: '2026-04-29' },
   { id: 'marketing-dashboard', name: 'Marketing Dashboard', description: 'Marketing performance dashboard (HTML)', status: 'active', category: 'Lead Gen Tools', folder: '~/clawd/products/marketing-dashboard/', updatedAt: '2026-04-29' },
 
+  // === NEW (auto-detected 2026-04-30) ===
+  { id: 'learning', name: 'Learning Plan', description: 'AI agent skill development & mastery plan', status: 'active', category: 'System', folder: '~/clawd/learning/', updatedAt: '2026-04-30' },
+  { id: 'security-overhaul', name: 'Security Overhaul', description: 'Security infrastructure upgrade project', status: 'active', category: 'System', folder: '~/clawd/security-overhaul/', updatedAt: '2026-04-30' },
+  { id: 'reel-frames', name: 'Reel Frames', description: 'Video frame extraction & analysis collection', status: 'done', category: 'Experiments', folder: '~/clawd/reel-frames/', updatedAt: '2026-04-30' },
+
   // === SYSTEM ===
   { id: 'skills', name: 'Skills', description: 'OpenClaw skill definitions', status: 'active', category: 'System', folder: '~/clawd/skills/', updatedAt: '2026-02-14' },
   { id: 'memory', name: 'Memory', description: 'Daily notes and session memory', status: 'active', category: 'System', folder: '~/clawd/memory/', updatedAt: '2026-02-14' },
@@ -261,7 +266,7 @@ const projects: Project[] = [
 
 const categories: Category[] = ['all', 'OpenClaw Agency', 'Nodefy Internal', 'Lead Gen Tools', 'Client Websites', 'AI Projects', 'Experiments', 'System']
 
-const LAST_UPDATED = '2026-04-29 09:00'
+const LAST_UPDATED = '2026-04-30 09:00'
 
 type StatusFilter = 'all' | 'active' | 'done' | 'paused' | 'blocked'
 
