@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 // ============================================
 // OPENCLAW DASHBOARD
-// Last Updated: 2026-04-30 09:00
+// Last Updated: 2026-05-02 09:01
 // Nodefy AI Agent Workspace
 // ============================================
 
@@ -104,7 +104,7 @@ const projects: Project[] = [
   // === NEW (auto-detected 2026-02-18) ===
   { id: 'aromaclub-landing', name: 'Aromaclub Landing', description: 'Landing page project', status: 'done', category: 'Client Websites', url: 'https://aromaclub-landing.vercel.app', folder: '~/clawd/aromaclub-landing/', updatedAt: '2026-02-18' },
   { id: 'money-research', name: 'Money Research', description: 'AI income & creative monetization research', status: 'active', category: 'Experiments', folder: '~/clawd/money-research/', updatedAt: '2026-02-18' },
-  { id: 'nodefy-sales', name: 'Nodefy Sales Data', description: 'Sales forecasting & metrics', status: 'active', category: 'Nodefy Internal', folder: '~/clawd/nodefy-sales/', updatedAt: '2026-02-18' },
+  { id: 'nodefy-sales', name: 'Nodefy Sales Data', description: 'Sales forecasting & metrics', status: 'active', category: 'Nodefy Internal', folder: '~/clawd/nodefy-sales/', updatedAt: '2026-05-01' },
   { id: 'sales', name: 'Sales Pitches', description: 'Sales plans & client pitches', status: 'active', category: 'Nodefy Internal', folder: '~/clawd/sales/', updatedAt: '2026-02-18' },
   
   // === NEW (auto-detected 2026-02-19) ===
@@ -266,7 +266,7 @@ const projects: Project[] = [
 
 const categories: Category[] = ['all', 'OpenClaw Agency', 'Nodefy Internal', 'Lead Gen Tools', 'Client Websites', 'AI Projects', 'Experiments', 'System']
 
-const LAST_UPDATED = '2026-04-30 09:00'
+const LAST_UPDATED = '2026-05-02 09:01'
 
 type StatusFilter = 'all' | 'active' | 'done' | 'paused' | 'blocked'
 
