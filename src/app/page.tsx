@@ -260,6 +260,11 @@ const projects: Project[] = [
   { id: 'browser-security', name: 'Browser Security', description: 'Browser security configurations & policies', status: 'active', category: 'System', folder: '~/clawd/browser-security/', updatedAt: '2026-05-04' },
   { id: 'docker', name: 'Docker Configuration', description: 'Docker setup & containerization configs', status: 'active', category: 'System', folder: '~/clawd/docker/', updatedAt: '2026-05-04' },
 
+  // === NEW (auto-detected 2026-05-05) ===
+  { id: 'automation-scripts', name: 'Automation Scripts', description: 'Client automation & communication scripts', status: 'active', category: 'System', folder: '~/clawd/scripts/', updatedAt: '2026-05-05' },
+  { id: 'reel-frames-v2', name: 'Reel Frames v2', description: 'Video frame extraction collection v2', status: 'done', category: 'Experiments', folder: '~/clawd/reel_frames/', updatedAt: '2026-05-05' },
+  { id: 'shopify-assets', name: 'Shopify Assets', description: 'Shopify image assets & resources', status: 'active', category: 'System', folder: '~/clawd/shopify-images/', updatedAt: '2026-05-05' },
+
   // === SYSTEM ===
   { id: 'skills', name: 'Skills', description: 'OpenClaw skill definitions', status: 'active', category: 'System', folder: '~/clawd/skills/', updatedAt: '2026-02-14' },
   { id: 'memory', name: 'Memory', description: 'Daily notes and session memory', status: 'active', category: 'System', folder: '~/clawd/memory/', updatedAt: '2026-02-14' },
@@ -270,7 +275,7 @@ const projects: Project[] = [
 
 const categories: Category[] = ['all', 'OpenClaw Agency', 'Nodefy Internal', 'Lead Gen Tools', 'Client Websites', 'AI Projects', 'Experiments', 'System']
 
-const LAST_UPDATED = '2026-05-04 09:00'
+const LAST_UPDATED = '2026-05-05 09:00'
 
 type StatusFilter = 'all' | 'active' | 'done' | 'paused' | 'blocked'
 
