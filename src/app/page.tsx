@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 // ============================================
 // OPENCLAW DASHBOARD
-// Last Updated: 2026-05-11 09:00
+// Last Updated: 2026-05-12 09:00
 // Nodefy AI Agent Workspace
 // ============================================
 
@@ -265,6 +265,10 @@ const projects: Project[] = [
   { id: 'reel-frames-v2', name: 'Reel Frames v2', description: 'Video frame extraction collection v2', status: 'done', category: 'Experiments', folder: '~/clawd/reel_frames/', updatedAt: '2026-05-05' },
   { id: 'shopify-assets', name: 'Shopify Assets', description: 'Shopify image assets & resources', status: 'active', category: 'System', folder: '~/clawd/shopify-images/', updatedAt: '2026-05-05' },
 
+  // === NEW (auto-detected 2026-05-12) ===
+  { id: 'incoming', name: 'Incoming Projects', description: 'Incoming project files & documents (LinkedIn plans, etc.)', status: 'active', category: 'System', folder: '~/clawd/incoming/', updatedAt: '2026-05-12' },
+  { id: 'media-assets', name: 'Media Assets', description: 'Media files, images, and inbound assets', status: 'active', category: 'System', folder: '~/clawd/media/', updatedAt: '2026-05-12' },
+
   // === SYSTEM ===
   { id: 'skills', name: 'Skills', description: 'OpenClaw skill definitions', status: 'active', category: 'System', folder: '~/clawd/skills/', updatedAt: '2026-02-14' },
   { id: 'memory', name: 'Memory', description: 'Daily notes and session memory', status: 'active', category: 'System', folder: '~/clawd/memory/', updatedAt: '2026-02-14' },
@@ -275,7 +279,7 @@ const projects: Project[] = [
 
 const categories: Category[] = ['all', 'OpenClaw Agency', 'Nodefy Internal', 'Lead Gen Tools', 'Client Websites', 'AI Projects', 'Experiments', 'System']
 
-const LAST_UPDATED = '2026-05-11 09:00'
+const LAST_UPDATED = '2026-05-12 09:00'
 
 type StatusFilter = 'all' | 'active' | 'done' | 'paused' | 'blocked'
 
