@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 // ============================================
 // OPENCLAW DASHBOARD
-// Last Updated: 2026-05-12 09:00
+// Last Updated: 2026-05-13 09:00
 // Nodefy AI Agent Workspace
 // ============================================
 
@@ -104,7 +104,7 @@ const projects: Project[] = [
   // === NEW (auto-detected 2026-02-18) ===
   { id: 'aromaclub-landing', name: 'Aromaclub Landing', description: 'Landing page project', status: 'done', category: 'Client Websites', url: 'https://aromaclub-landing.vercel.app', folder: '~/clawd/aromaclub-landing/', updatedAt: '2026-02-18' },
   { id: 'money-research', name: 'Money Research', description: 'AI income & creative monetization research', status: 'active', category: 'Experiments', folder: '~/clawd/money-research/', updatedAt: '2026-02-18' },
-  { id: 'nodefy-sales', name: 'Nodefy Sales Data', description: 'Sales forecasting & metrics', status: 'active', category: 'Nodefy Internal', folder: '~/clawd/nodefy-sales/', updatedAt: '2026-05-04' },
+  { id: 'nodefy-sales', name: 'Nodefy Sales Data', description: 'Sales forecasting & metrics', status: 'active', category: 'Nodefy Internal', url: 'https://nodefy-sales.vercel.app', folder: '~/clawd/nodefy-sales/', updatedAt: '2026-05-04' },
   { id: 'sales', name: 'Sales Pitches', description: 'Sales plans & client pitches', status: 'active', category: 'Nodefy Internal', folder: '~/clawd/sales/', updatedAt: '2026-02-18' },
   
   // === NEW (auto-detected 2026-02-19) ===
@@ -180,14 +180,14 @@ const projects: Project[] = [
   { id: 'pragma-website', name: 'Pragma Website', description: 'Static website (HTML/CSS/JS on Vercel)', status: 'done', category: 'Client Websites', url: 'https://pragma-website.vercel.app', folder: '~/clawd/pragma-website/', updatedAt: '2026-03-17' },
 
   // === NEW (auto-detected 2026-03-20) ===
-  { id: 'cafe-de-wetering', name: 'Cafe de Wetering', description: 'Client website (HTML/Vercel)', status: 'active', category: 'Client Websites', folder: '~/clawd/cafe-de-wetering/', updatedAt: '2026-03-20' },
+  { id: 'cafe-de-wetering', name: 'Cafe de Wetering', description: 'Client website (HTML/Vercel)', status: 'active', category: 'Client Websites', url: 'https://cafe-de-wetering.vercel.app', folder: '~/clawd/cafe-de-wetering/', updatedAt: '2026-03-20' },
   { id: 'douwe-website', name: 'Douwe Website', description: 'Client website (static HTML)', status: 'done', category: 'Client Websites', folder: '~/clawd/douwe-website/', updatedAt: '2026-03-20' },
 
   // === NEW (auto-detected 2026-03-22) ===
   { id: 'nodefy-marketing-grader', name: 'Nodefy Marketing Grader', description: 'Marketing grading/scoring tool (Next.js)', status: 'active', category: 'Lead Gen Tools', folder: '~/clawd/nodefy-marketing-grader/', updatedAt: '2026-03-22' },
 
   // === NEW (auto-detected 2026-03-24) ===
-  { id: 'huizentocht', name: 'Huizentocht', description: 'House hunting/property project', status: 'active', category: 'Experiments', folder: '~/clawd/huizentocht/', updatedAt: '2026-03-24' },
+  { id: 'huizentocht', name: 'Huizentocht', description: 'House hunting/property project', status: 'active', category: 'Experiments', url: 'https://huizentocht.vercel.app', folder: '~/clawd/huizentocht/', updatedAt: '2026-03-24' },
   { id: 'nodefy-skills', name: 'Nodefy Skills', description: 'Skill definitions & templates', status: 'active', category: 'System', folder: '~/clawd/nodefy-skills/', updatedAt: '2026-03-24' },
 
   // === NEW (auto-detected 2026-03-28) ===
@@ -279,7 +279,7 @@ const projects: Project[] = [
 
 const categories: Category[] = ['all', 'OpenClaw Agency', 'Nodefy Internal', 'Lead Gen Tools', 'Client Websites', 'AI Projects', 'Experiments', 'System']
 
-const LAST_UPDATED = '2026-05-12 09:00'
+const LAST_UPDATED = '2026-05-13 09:00'
 
 type StatusFilter = 'all' | 'active' | 'done' | 'paused' | 'blocked'
 
