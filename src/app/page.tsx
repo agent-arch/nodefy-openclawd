@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 // ============================================
 // OPENCLAW DASHBOARD
-// Last Updated: 2026-05-15 09:00
+// Last Updated: 2026-05-16 09:00
 // Nodefy AI Agent Workspace
 // ============================================
 
@@ -269,6 +269,9 @@ const projects: Project[] = [
   { id: 'incoming', name: 'Incoming Projects', description: 'Incoming project files & documents (LinkedIn plans, etc.)', status: 'active', category: 'System', folder: '~/clawd/incoming/', updatedAt: '2026-05-12' },
   { id: 'media-assets', name: 'Media Assets', description: 'Media files, images, and inbound assets', status: 'active', category: 'System', folder: '~/clawd/media/', updatedAt: '2026-05-12' },
 
+  // === NEW (auto-detected 2026-05-17) ===
+  { id: 'taxflow', name: 'TaxFlow', description: 'AI belastingservice voor ondernemers (HTML landing page)', status: 'active', category: 'Client Websites', folder: '~/clawd/fiscal-startup/', updatedAt: '2026-05-17' },
+
   // === SYSTEM ===
   { id: 'skills', name: 'Skills', description: 'OpenClaw skill definitions', status: 'active', category: 'System', folder: '~/clawd/skills/', updatedAt: '2026-02-14' },
   { id: 'memory', name: 'Memory', description: 'Daily notes and session memory', status: 'active', category: 'System', folder: '~/clawd/memory/', updatedAt: '2026-02-14' },
@@ -279,7 +282,7 @@ const projects: Project[] = [
 
 const categories: Category[] = ['all', 'OpenClaw Agency', 'Nodefy Internal', 'Lead Gen Tools', 'Client Websites', 'AI Projects', 'Experiments', 'System']
 
-const LAST_UPDATED = '2026-05-15 09:00'
+const LAST_UPDATED = '2026-05-18 09:00'
 
 type StatusFilter = 'all' | 'active' | 'done' | 'paused' | 'blocked'
 
