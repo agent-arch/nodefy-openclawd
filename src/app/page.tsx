@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 // ============================================
 // OPENCLAW DASHBOARD
-// Last Updated: 2026-05-19 09:00
+// Last Updated: 2026-05-21 09:00
 // Nodefy AI Agent Workspace
 // ============================================
 
@@ -56,10 +56,10 @@ const projects: Project[] = [
   { id: 'jesse', name: 'Jesse Jewelry', description: 'Jewelry webshop project', status: 'done', category: 'Client Websites', url: 'https://jesse-jewelry.vercel.app', folder: '~/clawd/jesse-jewelry/', updatedAt: '2026-01-25' },
   { id: 'sfi', name: 'SFI Greenmarkets', description: 'Green markets website', status: 'done', category: 'Client Websites', url: 'https://sfi-greenmarkets.vercel.app', folder: '~/clawd/sfi-greenmarkets/', updatedAt: '2026-01-12' },
   { id: 'zinc', name: 'Zinc Website', description: 'Client website', status: 'done', category: 'Client Websites', url: 'https://zinc-website.vercel.app', folder: '~/clawd/zinc-website/', updatedAt: '2026-01-15' },
-  { id: 'tolbar', name: 'Tolbar Website', description: 'Client website', status: 'done', category: 'Client Websites', url: 'https://tolbar-website.vercel.app', folder: '~/clawd/tolbar-website/', updatedAt: '2026-01-18' },
+  { id: 'tolbar', name: 'Tolbar Website', description: 'Client website (URL offline)', status: 'done', category: 'Client Websites', folder: '~/clawd/tolbar-website/', updatedAt: '2026-01-18' },
   { id: 'aperghis', name: 'Aperghis Website', description: 'Client website', status: 'done', category: 'Client Websites', url: 'https://aperghis-website.vercel.app', folder: '~/clawd/aperghis-website/', updatedAt: '2026-02-01' },
-  { id: 'spark', name: 'Spark Advertising', description: 'Advertising agency website', status: 'done', category: 'Client Websites', url: 'https://spark-advertising.vercel.app', folder: '~/clawd/spark-advertising/', updatedAt: '2026-01-10' },
-  { id: 'capisoft', name: 'Capisoft Redesign', description: 'Website redesign', status: 'done', category: 'Client Websites', url: 'https://capisoft-redesign.vercel.app', folder: '~/clawd/capisoft-redesign/', updatedAt: '2026-01-30' },
+  { id: 'spark', name: 'Spark Advertising', description: 'Advertising agency website (URL offline)', status: 'done', category: 'Client Websites', folder: '~/clawd/spark-advertising/', updatedAt: '2026-01-10' },
+  { id: 'capisoft', name: 'Capisoft Redesign', description: 'Website redesign (URL offline)', status: 'done', category: 'Client Websites', folder: '~/clawd/capisoft-redesign/', updatedAt: '2026-01-30' },
   { id: 'namam', name: 'NAMAM Website', description: 'Luxury interior design website', status: 'done', category: 'Client Websites', url: 'https://namam-website.vercel.app', folder: '~/clawd/namam-website/', updatedAt: '2026-02-12' },
   { id: 'godelphi', name: 'Go Delphi Website', description: 'Luxury retreat website', status: 'done', category: 'Client Websites', url: 'https://godelphi-website.vercel.app', folder: '~/clawd/godelphi-website/', updatedAt: '2026-02-14' },
   { id: 'lucky', name: 'Lucky Parcel', description: 'Market stall website', status: 'done', category: 'Client Websites', url: 'https://lucky-parcel.vercel.app', folder: '~/clawd/lucky-parcel/', updatedAt: '2026-02-14' },
@@ -78,7 +78,7 @@ const projects: Project[] = [
   { id: 'polymarket-bot', name: 'Polymarket Bot', description: 'Polymarket trading bot', status: 'done', category: 'Experiments', folder: '~/clawd/polymarket-bot/', updatedAt: '2026-02-01' },
   { id: 'polymarket-yolo', name: 'Polymarket YOLO', description: 'Polymarket trading experiment', status: 'done', category: 'Experiments', url: 'https://polymarket-yolo.vercel.app', folder: '~/clawd/polymarket-yolo/', updatedAt: '2026-01-28' },
   { id: 'sol', name: 'SOL Trader', description: 'Solana trading bot', status: 'done', category: 'Experiments', folder: '~/clawd/sol-trader/', updatedAt: '2026-01-25' },
-  { id: 'disco', name: 'Disco Frog Clone', description: 'Interactive website clone', status: 'done', category: 'Experiments', url: 'https://discofrog-clone.vercel.app', folder: '~/clawd/discofrog-clone/', updatedAt: '2026-02-04' },
+  { id: 'disco', name: 'Disco Frog Clone', description: 'Interactive website clone (URL offline)', status: 'done', category: 'Experiments', folder: '~/clawd/discofrog-clone/', updatedAt: '2026-02-04' },
   { id: 'screensaver', name: 'Moltbot Screensaver', description: 'Idle screen with red lobster mascot', status: 'done', category: 'Experiments', url: 'https://nodefy-screensaver.vercel.app', folder: '~/clawd/screensaver/', updatedAt: '2026-02-04' },
   { id: 'valentijn', name: 'Valentijn', description: 'Video generation with Remotion', status: 'done', category: 'Experiments', url: 'https://valentijn.vercel.app', folder: '~/clawd/valentijn/', updatedAt: '2026-02-14' },
   { id: 'remotion', name: 'Remotion Project', description: 'Video generation with Remotion', status: 'done', category: 'Experiments', folder: '~/clawd/remotion-project/', updatedAt: '2026-01-05' },
@@ -282,7 +282,7 @@ const projects: Project[] = [
 
 const categories: Category[] = ['all', 'OpenClaw Agency', 'Nodefy Internal', 'Lead Gen Tools', 'Client Websites', 'AI Projects', 'Experiments', 'System']
 
-const LAST_UPDATED = '2026-05-19 09:00'
+const LAST_UPDATED = '2026-05-21 09:00'
 
 type StatusFilter = 'all' | 'active' | 'done' | 'paused' | 'blocked'
 
