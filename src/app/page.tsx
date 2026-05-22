@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 // ============================================
 // OPENCLAW DASHBOARD
-// Last Updated: 2026-05-21 09:00
+// Last Updated: 2026-05-22 09:00
 // Nodefy AI Agent Workspace
 // ============================================
 
@@ -31,7 +31,6 @@ const projects: Project[] = [
   { id: 'knowledge-base', name: 'Knowledge Base', description: 'Learnings, frameworks, bronnen monitoring', status: 'active', category: 'Nodefy Internal', folder: '~/clawd/knowledge-base/', updatedAt: '2026-02-09' },
   { id: 'sales-accelerator', name: 'Sales Accelerator', description: 'LinkedIn content kalender, sales strategie', status: 'active', category: 'Nodefy Internal', url: 'https://nodefy-sales-dashboard.vercel.app', folder: '~/clawd/nodefy-sales-dashboard/', updatedAt: '2026-02-14' },
   { id: 'nodefy-scaling', name: 'Nodefy Scaling', description: 'Scaling strategy & research', status: 'done', category: 'Nodefy Internal', folder: '~/clawd/nodefy-scaling/', updatedAt: '2026-01-30' },
-  { id: 'nodefy-2', name: 'Nodefy 2.0', description: 'Nodefy transformatie plan', status: 'done', category: 'Nodefy Internal', folder: '~/clawd/nodefy-2.0/', updatedAt: '2026-01-28' },
   { id: 'nodefy-redesign', name: 'Nodefy Redesign', description: 'Website redesign project', status: 'paused', category: 'Nodefy Internal', folder: '~/clawd/nodefy-redesign/', updatedAt: '2026-02-08' },
   { id: 'nodefy-dashboard', name: 'Nodefy Dashboard', description: 'Internal dashboard', status: 'done', category: 'Nodefy Internal', url: 'https://nodefy-dashboard.vercel.app', folder: '~/clawd/nodefy-dashboard/', updatedAt: '2026-02-10' },
   { id: 'client-portal', name: 'Client Portal', description: 'Nodefy client portal concept', status: 'paused', category: 'Nodefy Internal', url: 'https://nodefy-client-portal.vercel.app', folder: '~/clawd/nodefy-client-portal/', updatedAt: '2026-02-08' },
@@ -282,7 +281,7 @@ const projects: Project[] = [
 
 const categories: Category[] = ['all', 'OpenClaw Agency', 'Nodefy Internal', 'Lead Gen Tools', 'Client Websites', 'AI Projects', 'Experiments', 'System']
 
-const LAST_UPDATED = '2026-05-21 09:00'
+const LAST_UPDATED = '2026-05-22 09:00'
 
 type StatusFilter = 'all' | 'active' | 'done' | 'paused' | 'blocked'
 
