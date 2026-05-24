@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 // ============================================
 // OPENCLAW DASHBOARD
-// Last Updated: 2026-05-22 09:00
+// Last Updated: 2026-05-24 09:00
 // Nodefy AI Agent Workspace
 // ============================================
 
@@ -28,6 +28,7 @@ const projects: Project[] = [
   
   // === NODEFY INTERNAL ===
   { id: 'client-overview', name: 'Client Overview', description: '48 klanten geanalyseerd en gecategoriseerd', status: 'done', category: 'Nodefy Internal', folder: '~/clawd/nodefy-clients/', updatedAt: '2026-02-09' },
+  { id: 'nodefy-2-0', name: 'Nodefy 2.0 Plan', description: 'Nodefy transformatie roadmap & planning document', status: 'done', category: 'Nodefy Internal', folder: '~/clawd/nodefy-2.0/', updatedAt: '2026-01-28' },
   { id: 'knowledge-base', name: 'Knowledge Base', description: 'Learnings, frameworks, bronnen monitoring', status: 'active', category: 'Nodefy Internal', folder: '~/clawd/knowledge-base/', updatedAt: '2026-02-09' },
   { id: 'sales-accelerator', name: 'Sales Accelerator', description: 'LinkedIn content kalender, sales strategie', status: 'active', category: 'Nodefy Internal', url: 'https://nodefy-sales-dashboard.vercel.app', folder: '~/clawd/nodefy-sales-dashboard/', updatedAt: '2026-02-14' },
   { id: 'nodefy-scaling', name: 'Nodefy Scaling', description: 'Scaling strategy & research', status: 'done', category: 'Nodefy Internal', folder: '~/clawd/nodefy-scaling/', updatedAt: '2026-01-30' },
@@ -271,6 +272,12 @@ const projects: Project[] = [
   // === NEW (auto-detected 2026-05-17) ===
   { id: 'taxflow', name: 'TaxFlow', description: 'AI belastingservice voor ondernemers (HTML landing page)', status: 'active', category: 'Client Websites', folder: '~/clawd/fiscal-startup/', updatedAt: '2026-05-17' },
 
+  // === NEW (auto-detected 2026-05-24) ===
+  { id: 'browser-sessions', name: 'Browser Sessions', description: 'Browser session management & state', status: 'active', category: 'System', folder: '~/clawd/browser-sessions/', updatedAt: '2026-05-24' },
+  { id: 'clawd-meta', name: 'Clawd Meta', description: 'Workspace metadata & configurations', status: 'active', category: 'System', folder: '~/clawd/clawd/', updatedAt: '2026-05-24' },
+  { id: 'secrets-vault', name: 'Secrets Vault', description: 'Secure secrets & credentials storage', status: 'active', category: 'System', folder: '~/clawd/secrets/', updatedAt: '2026-05-24' },
+  { id: 'workspace-state', name: 'Workspace State', description: 'Workspace state management files', status: 'active', category: 'System', folder: '~/clawd/state/', updatedAt: '2026-05-24' },
+
   // === SYSTEM ===
   { id: 'skills', name: 'Skills', description: 'OpenClaw skill definitions', status: 'active', category: 'System', folder: '~/clawd/skills/', updatedAt: '2026-02-14' },
   { id: 'memory', name: 'Memory', description: 'Daily notes and session memory', status: 'active', category: 'System', folder: '~/clawd/memory/', updatedAt: '2026-02-14' },
@@ -281,7 +288,7 @@ const projects: Project[] = [
 
 const categories: Category[] = ['all', 'OpenClaw Agency', 'Nodefy Internal', 'Lead Gen Tools', 'Client Websites', 'AI Projects', 'Experiments', 'System']
 
-const LAST_UPDATED = '2026-05-22 09:00'
+const LAST_UPDATED = '2026-05-24 09:00'
 
 type StatusFilter = 'all' | 'active' | 'done' | 'paused' | 'blocked'
 
